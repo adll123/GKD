@@ -1,0 +1,30 @@
+{
+    id: 0,
+    name: 'Subscription',
+    groups: [
+        {
+            key: 1,
+            name:'不显示聊天',
+            enable: true,
+            quickFind: true,
+            actionMaximum: 1,
+            activityIds: ['com.tencent.mm.ui.LauncherUI'],
+            rules: [
+                {matches:'@Button[text="不显示"][id="com.tencent.mm:id/jwo"]'},
+                ],
+                }
+        {
+            key: 2,
+            name:'断网禁止',
+            enable: true,
+            quickFind: true,
+            actionMaximum: 1,
+            activityIds: ['com.coloros.simsettings.networkcontrol.NetworkControlActivity'],
+            rules: [
+                {matches:'@Button[text="保持禁止"][id="android:id/button2"]'},
+                ],
+                }
+            ]
+        }
+    ]
+}
